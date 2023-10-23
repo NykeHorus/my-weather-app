@@ -13,7 +13,7 @@ const LocationsProvider = ({ children }) => {
       },
     });
   }, []);
-  const [locations, setLocations] = useState([]);
+  const [locations, setLocations] = useState([""]);
   //console.log({ locations });
   return (
     <LocationsContext.Provider value={{ locations, setLocations }}>

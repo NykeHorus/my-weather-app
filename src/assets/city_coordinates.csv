@@ -1,57 +1,58 @@
 latitude,longitude,city,country,id
-52.367,4.904,Amsterdam,Netherlands,1
-39.933,32.859,Ankara,Turkey,2
-56.134,12.945,Åstorp,Sweden,3   
-37.983,23.727,Athens,Greece,4
-54.597,-5.930,Belfast,Northern Ireland,5
-41.387,2.168,Barcelona,Spain,6
-52.520,13.405,Berlin,Germany,7
-46.948,7.447,Bern,Switzerland,8
-43.263,-2.935,Bilbao,Spain,9
-50.847,4.357,Brussels,Belgium,10
-47.497,19.040,Bucharest,Romania,11
-59.329,18.068,Budapest,Hungary,12
-51.483,-3.168,Cardiff,Wales,13
-50.937,6.96,Cologne,Germany,14
-55.676,12.568,Copenhagen,Denmark,15
-51.898,-8.475,Cork,Ireland,16
-53.349,-6.260,Dublin,Ireland,17
-55.953,-3.188,Edinburgh,Scotland,18
-43.7696,11.255,Florence,Italy,19
-50.110,8.682,Frankfurt,Germany ,20       
-43.254,6.637,French Riviera,France,21
-32.650,-16.908,Funchal,Portugual,22
-36.140,-5.353,Gibraltar,23
-57.708,11.974,Gothenburg,Sweden ,24    
-53.548,9.987,Hamburg,Germany,25
-60.169,24.938,Helsinki,Finland,26
-39.020,1.482,Ibiza,Spain,27
-50.450,30.523,Kyiv,Ukraine,28
-61.115,10.466,Lillehammer,Norway,29
-38.722,-9.139,Lisbon,Portugual,30
-51.507,-0.127,London,England,32   
-40.416,-3.703,Madrid,Spain,33
-39.695,3.017,Mallorca,Spain,34
-53.480,-2.242,Manchester,England,35      
-43.296,5.369,Marseille,France,36
-27.760,-15.586,Maspalomas,Spain,37
-45.464,9.190,Milan,Italy,38
-48.135,11.582,Munich,Germany,39
-40.851,14.268,Naples,Italy,40
-43.034,-2.417,Oñati,Spain,41
-59.913,10.752,Oslo,Norway,42
-48.856,2.352,Paris,France,43
-50.075,14.437,Prague,Czech Republic,44
-64.146,-21.942,Reykjavík,Iceland,45
-56.879,24.603,Riga,Latvia,46
-41.902,12.496,Rome,Italy,47
-39.453,-31.127,Santa Cruz das Flores,Portugual,48
-28.463,-16.251,Santa Cruz de Tenerife,Spain,49
-57.273,-6.215,Skye,Scotland,50
-42.697,23.321,Sofia,Bulgaria,51
-59.329,18.068,Stockholm,Sweden,52
-59.437,24.753,Tallinn,Estonia,53
-18.208,16.373,Vienna,Austria,54
-52.229,21.012,Warsaw,Poland,55
-53.961,-1.07,York,England,56
-47.376,8.541,Zurich,Switzerland,57
+52.367,4.904,Amsterdam,Netherlands,0
+39.933,32.859,Ankara,Turkey,1
+56.134,12.945,Åstorp,Sweden,2  
+37.983,23.727,Athens,Greece,3
+54.597,-5.930,Belfast,Northern Ireland,4
+41.387,2.168,Barcelona,Spain,5
+52.520,13.405,Berlin,Germany,6
+46.948,7.447,Bern,Switzerland,7
+43.263,-2.935,Bilbao,Spain,8
+50.847,4.357,Brussels,Belgium,9
+47.497,19.040,Bucharest,Romania,10
+59.329,18.068,Budapest,Hungary,11
+51.483,-3.168,Cardiff,Wales,12
+50.937,6.96,Cologne,Germany,13
+55.676,12.568,Copenhagen,Denmark,14
+51.898,-8.475,Cork,Ireland,15
+53.349,-6.260,Dublin,Ireland,16
+55.953,-3.188,Edinburgh,Scotland,17
+43.7696,11.255,Florence,Italy,  18
+50.110,8.682,Frankfurt,Germany,19   
+43.254,6.637,French Riviera,France,20
+32.650,-16.908,Funchal,Portugual,21
+36.140,-5.353,Gibraltar,United Kingdom,22
+57.708,11.974,Gothenburg,Sweden,23
+53.548,9.987,Hamburg,Germany,24
+60.169,24.938,Helsinki,Finland,25
+39.020,1.482,Ibiza,Spain,26
+50.450,30.523,Kyiv,Ukraine,27
+61.115,10.466,Lillehammer,Norway,28
+38.722,-9.139,Lisbon,Portugual,29
+51.507,-0.127,London,England,30
+40.416,-3.703,Madrid,Spain,31
+39.695,3.017,Mallorca,Spai,32
+53.480,-2.242,Manchester,England,33     
+43.296,5.369,Marseille,France,34
+27.760,-15.586,Maspalomas,Spain,35
+45.464,9.190,Milan,Italy,36
+48.135,11.582,Munich,Germany,37
+40.851,14.268,Naples,Italy,38
+43.034,-2.417,Oñati,Spain,39
+59.913,10.752,Oslo,Norway,40
+48.856,2.352,Paris,France,41
+50.075,14.437,Prague,Czech Republic,42
+64.146,-21.942,Reykjavík,Iceland,43
+56.879,24.603,Riga,Latvia,44
+41.902,12.496,Rome,Italy,45
+39.453,-31.127,Santa Cruz das Flores,Portugual,46
+28.463,-16.251,Santa Cruz de Tenerife,Spain,47
+57.273,-6.215,Skye,Scotland,48
+42.697,23.321,Sofia,Bulgaria,49
+59.329,18.068,Stockholm,Sweden,50
+59.437,24.753,Tallinn,Estonia,51
+18.208,16.373,Vienna,Austria,52
+52.229,21.012,Warsaw,Poland,53
+53.961,-1.07,York,England,54
+47.376,8.541,Zurich,Switzerland,55
+```
