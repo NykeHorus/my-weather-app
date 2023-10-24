@@ -3,6 +3,7 @@ import Weather from "./components/weather";
 import LocationSelector from "./components/LocationSelector";
 import LocationsProvider from "./Context.js/locationsContext";
 import FetchCityProvider from "./Context.js/fetchCityContext";
+import WeatherProvider from "./Context.js/weatherForCast";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <LocationsProvider>
           <FetchCityProvider>
             <LocationSelector />
+            <WeatherProvider />
             <Weather />
           </FetchCityProvider>
         </LocationsProvider>

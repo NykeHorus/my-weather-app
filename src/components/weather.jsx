@@ -1,49 +1,38 @@
 import React, { useEffect, useContext, useState } from "react";
 import { FetchCityContext } from "../Context.js/fetchCityContext";
-import { LocationsContext } from "../Context.js/locationsContext";
+import { weatherContext } from "../Context.js/weatherForCast";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 
 const Weather = () => {
-  const { coordinates } = useContext(FetchCityContext);
-  const { locations } = useContext(LocationsContext);
-  const cods = locations.at(coordinates);
-  const [newdatas, setNewdatas] = useState([]);
-
-  //console.log({ coordinates });
-
-  let API = `http://www.7timer.info/bin/api.pl?lon=${cods.latitude}&lat=${cods.longitude}&product=civillight&output=json`;
-
-  useEffect(() => {
-    const fetchApiData = async () => {
-      await fetch(API)
-        .then((response) => response.json())
-        .then((data) => setNewdatas(data));
-    };
-    fetchApiData();
-  }, [cods]);
-
-  const timer = setTimeout(() => {
-    console.log(newdatas.dataseries);
-    return () => clearTimeout(timer);
-  }, 5000);
-
-  //newdatas.map((newdata) => {
-  //console.log(newdata);
-  //});
-  //console.log(cods.latitude);
+  const { newdatas } = useContext(FetchCityContext);
+  const { weatherIcons } = useContext(weatherContext);
+  //console.log(newdatas);
 
   return (
     <>
       <h2>EurOrbit</h2>
       <CardGroup>
-        <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
-          <Card.Body>
-            <Card.Title>{newdatas.city}</Card.Title>
-            <Card.Text>{newdatas.city}</Card.Text>
-          </Card.Body>
-        </Card>
+        {newdatas.map((newdata) => (
+          <Card>
+            <Card.Body>
+              <Card.Title>{newdata.date}</Card.Title>
+              <Card.Img
+                variant="bottom"
+                src={`weather_icons/${newdata.weather}.png`}
+                alt={newdata.weather}
+              />
+              <div class="gap-3">
+                <Card.Text class="fw-bold text-center">
+                  {newdata.weather}
+                </Card.Text>
+                <Card.Text class="fw-bold text-center">
+                  max: {newdata.temp2m.max}°C | min: {newdata.temp2m.min}°C
+                </Card.Text>
+              </div>
+            </Card.Body>
+          </Card>
+        ))}
       </CardGroup>
     </>
   );

@@ -6,7 +6,7 @@ import Form from "react-bootstrap/Form";
 
 const LocationSelector = () => {
   const { locations, setLocations } = useContext(LocationsContext);
-  const [selectedcountry, setSelectedcountry] = useState([locations[1]]);
+  const [selectedcountry, setSelectedcountry] = useState(locations[3]);
   const { setCoordinates } = useContext(FetchCityContext);
 
   //Event handler to retrieve the selected country
@@ -35,7 +35,7 @@ const LocationSelector = () => {
         Select Country:
       </label>
       <Form.Select
-        id={location.id}
+        id="location_country"
         value={locations.country}
         onClick={handleChange}
         size="lg"
@@ -45,18 +45,17 @@ const LocationSelector = () => {
         ))}
       </Form.Select>
       <br />
-      <label htmlFor="location_city" size="sm">
+      <label htmlFor="{cities_for_selectedcountry.id}" size="sm">
         Select city:
       </label>
       <Form.Select
-        id={cities_for_selectedcountry.id}
+        id="{cities_for_selectedcountry.id}"
         size="sm"
         onClick={handleChange2}
-        value={cities_for_selectedcountry.city}
       >
         {cities_for_selectedcountry.map((city_for_selectedcountry) => (
           <option
-            key={cities_for_selectedcountry.id}
+            key={city_for_selectedcountry.id}
             value={city_for_selectedcountry.id}
           >
             {city_for_selectedcountry.city}
