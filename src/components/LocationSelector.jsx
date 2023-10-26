@@ -3,9 +3,11 @@ import { LocationsContext } from "../Context.js/locationsContext";
 import { FetchCityContext } from "../Context.js/fetchCityContext";
 
 import Form from "react-bootstrap/Form";
+import { LoadingContext } from "../Context.js/loadingContext";
 
 const LocationSelector = () => {
   const { locations, setLocations } = useContext(LocationsContext);
+  const { isLoading, setIsLoading } = useContext(LoadingContext);
   const [selectedcountry, setSelectedcountry] = useState(locations[3]);
   const { setCoordinates } = useContext(FetchCityContext);
 
@@ -13,6 +15,7 @@ const LocationSelector = () => {
   const handleChange = (e) => {
     //console.log(e.target.value);
     setSelectedcountry(e.target.value);
+    setIsLoading(true);
   };
   //console.log({ selectedcountry });
 
@@ -27,7 +30,9 @@ const LocationSelector = () => {
   const handleChange2 = (e) => {
     //console.log(e.target.value);
     setCoordinates(e.target.value);
+    setIsLoading(true);
   };
+  //console.log(isLoading);
 
   return (
     <div>
@@ -37,7 +42,8 @@ const LocationSelector = () => {
       <Form.Select
         id="location_country"
         value={locations.country}
-        onClick={handleChange}
+        onChange={handleChange}
+        disabled={isLoading}
         size="lg"
       >
         {locations.map((location) => (
@@ -51,7 +57,7 @@ const LocationSelector = () => {
       <Form.Select
         id="{cities_for_selectedcountry.id}"
         size="sm"
-        onClick={handleChange2}
+        onChange={handleChange2}
       >
         {cities_for_selectedcountry.map((city_for_selectedcountry) => (
           <option
