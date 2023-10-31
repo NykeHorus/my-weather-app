@@ -71,3 +71,12 @@ button:focus-visible {
 .wrapper {
   padding: 20px;
 }
+
+.app {
+  background-size: cover;
+  background-position: cover;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  color: #ffffff;
+}

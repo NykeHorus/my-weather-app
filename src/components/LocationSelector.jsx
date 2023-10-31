@@ -45,6 +45,7 @@ const LocationSelector = () => {
         onChange={handleChange}
         disabled={isLoading}
         size="lg"
+        className="container select-css"
       >
         {locations.map((location) => (
           <option key={location.id}>{location.country}</option>

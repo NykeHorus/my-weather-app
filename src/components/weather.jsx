@@ -5,16 +5,22 @@ import CardGroup from "react-bootstrap/CardGroup";
 
 const Weather = () => {
   const { newdatas } = useContext(FetchCityContext);
-  //console.log(newdatas);
+
+  console.log(newdatas);
 
   return (
     <>
-      <h2>EurOrbit</h2>
       <CardGroup>
-        {newdatas.map((newdata) => (
-          <Card>
+        {newdatas.map((newdata, index) => (
+          <Card key={index}>
             <Card.Body>
-              <Card.Title>{newdata.date}</Card.Title>
+              <Card.Title>
+                {new Date(
+                  newdata.date
+                    .toString()
+                    .replace(/^(\d{4})(\d{2})(\d{2})$/, "$1-$2-$3")
+                ).toDateString()}
+              </Card.Title>
               <Card.Img
                 variant="bottom"
                 src={`weather_icons/${newdata.weather}.png`}
@@ -25,7 +31,7 @@ const Weather = () => {
                   {newdata.weather}
                 </Card.Text>
                 <Card.Text className="fw-bold text-center">
-                  max: {newdata.temp2m.max}°C | min: {newdata.temp2m.min}°C
+                  max: {newdata.temp2m.max}°C <br /> min: {newdata.temp2m.min}°C
                 </Card.Text>
               </div>
             </Card.Body>

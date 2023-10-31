@@ -9,15 +9,25 @@ import LoadingSpinner from "./components/LoadingSpinner";
 function App() {
   return (
     <>
-      <div className="App">
-        <LocationsProvider>
-          <LoadingProvider>
-            <FetchCityProvider>
-              <LocationSelector />
-              <LoadingSpinner />
-            </FetchCityProvider>
-          </LoadingProvider>
-        </LocationsProvider>
+      <div
+        className="App"
+        style={{
+          backgroundImage: "url(/weather_icons/background.jpg)",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <h1 className="text-center">Weather Cast</h1>
+        <div className="container">
+          <LocationsProvider>
+            <LoadingProvider>
+              <FetchCityProvider>
+                <LocationSelector />
+                <LoadingSpinner />
+              </FetchCityProvider>
+            </LoadingProvider>
+          </LocationsProvider>
+        </div>
       </div>
     </>
   );
