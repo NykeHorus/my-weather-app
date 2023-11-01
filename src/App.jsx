@@ -17,6 +17,12 @@ function App() {
         />
         <h1 className="section-heading">Weather Cast</h1>
         <h2 className="section-subheading">European Weather Forecast</h2>
+        <p className="copyright">
+          Powered by{" "}
+          <a href="https://7timer.info/" target="blank">
+            <span className="keyword-magnet">7timer</span>
+          </a>
+        </p>
         <div className="container">
           <LocationsProvider>
             <LoadingProvider>

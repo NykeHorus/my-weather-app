@@ -69,6 +69,32 @@ a:hover {
   text-shadow: 2.25pt 2.25pt 0.625pc black;
 }
 
+.keyword-magnet {
+  border-left-width: 0.017708333in;
+  border-bottom-width: 0.017708333in;
+  border-top-width: 0.017708333in;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-left-color: #ddd;
+  border-bottom-color: #ddd;
+  border-right-color: #ddd;
+  border-top-color: #ddd;
+  border-radius: 3px;
+  line-height: 2.2em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1em;
+  text-align: center;
+}
+
 .footer {
   text-shadow: 0.125pc 0.125pc 0.625pc black;
   padding-bottom: 4rem;
@@ -81,4 +107,8 @@ a:hover {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.copyright {
+  text-align: center;
 }
