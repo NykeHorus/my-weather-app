@@ -10,7 +10,7 @@ function LoadingSpinner() {
     return <Weather />;
   } else
     return (
-      <Spinner animation="border" role="status">
+      <Spinner animation="border" role="status" variant="dark">
         <span className="visually-hidden align-items-center">Loading...</span>
       </Spinner>
     );

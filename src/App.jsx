@@ -9,25 +9,34 @@ import LoadingSpinner from "./components/LoadingSpinner";
 function App() {
   return (
     <>
-      <div
-        className="App"
-        style={{
-          backgroundImage: "url(/weather_icons/background.jpg)",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <h1 className="text-center">Weather Cast</h1>
+      <div className="App">
+        <img
+          className="header-background"
+          src=" weather_icons/background.jpg"
+          alt="banner"
+        />
+        <h1 className="section-heading">Weather Cast</h1>
+        <h2 className="section-subheading">European Weather Forecast</h2>
         <div className="container">
           <LocationsProvider>
             <LoadingProvider>
               <FetchCityProvider>
-                <LocationSelector />
-                <LoadingSpinner />
+                <div className="spinner">
+                  <LocationSelector />
+                  <div className="spinner">
+                    <LoadingSpinner />
+                  </div>
+                </div>
               </FetchCityProvider>
             </LoadingProvider>
           </LocationsProvider>
         </div>
+        <footer className="footer">
+          <div className="section-divider">
+            <img src="./weather_icons/cloudline.png" />
+          </div>
+          <span> &copy; 2023 WeatherCast.</span>
+        </footer>
       </div>
     </>
   );

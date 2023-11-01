@@ -12,7 +12,7 @@ const Weather = () => {
     <>
       <CardGroup>
         {newdatas.map((newdata, index) => (
-          <Card key={index}>
+          <Card key={index} bg="warning" border="dark">
             <Card.Body>
               <Card.Title>
                 {new Date(
